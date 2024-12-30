@@ -1,1 +1,347 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:wght@400;700&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:wght@400;700&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:wght@400;700&display=swap');
+
+/* General Styles */
+
+*{
+    font-family: "Barlow","Fraunces";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+}
+
+/* General Styles *//* General Styles *//* General Styles *//* General Styles */
+
+/* Top Container */
+
+.navigation-top-section {
+    background-image: url('/mobile/image-header.jpg'); /* Image as background */
+    background-size: cover; /* Adjust background size */
+    background-repeat: no-repeat;
+    background-position: bottom; /* Center the image */
+    position: relative; /* Establish a positioning context */
+    width: 100%; /* Adjust width as needed */
+    min-height: 40rem; /* Set height for the section */
+    display: flex; /* Align content within */
+    align-items: flex-start; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.top-text-container h2{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.top-text-container h1{
+    letter-spacing: 1.2rem;
+    font-family: "Fraunces";
+    font-weight: 900;
+}
+
+h1{
+    position: relative; /* Position the text relative to the container */
+    color: white; /* Make the text visible */
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold; /* Emphasize the text */
+    z-index: 2; /* Ensure the text is above the image */
+    text-align: center; /* Center-align text */
+}
+
+.down-icon{
+    position: absolute; /* Position it relative to the section */
+    top: 44%; /* Move to 50% of the section's height */
+    bottom: 2rem; /* Position it near the bottom of the section */
+    left: 50%; /* Move the center of the icon to the middle horizontally */
+    transform: translateX(-50%); /* Adjust to center it perfectly */
+    color: white; /* Set icon color */
+    font-size: 2rem; /* Adjust size as needed */
+    z-index: 2; /* Ensure it's above the background */
+    text-align: center; /* Center-align text inside, if any */
+    height: 13rem;
+}
+
+.h2-text{
+    position: relative; /* Position the text relative to the container */
+  color: white; /* Make the text visible */
+  font-size: 2rem; /* Adjust text size */
+  font-weight: bold; /* Emphasize the text */
+  z-index: 2; /* Ensure the text is above the image */
+  text-align: center; /* Center-align text */
+}
+
+.header-img{
+    z-index: 1;
+    position: absolute; /* Position the image absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image cover the full width */
+  height: 100%; /* Make the image cover the full height */
+  object-fit: cover; /* Ensure the image covers without distortion */
+ object-position: b;
+}
+
+/* Top Container *//* Top Container *//* Top Container *//* Top Container *//* Top Container *//* Top Container *//* Top Container */
+
+/* Grids */
+
+.grid{
+    display: grid;
+}
+
+.egg-img{
+    width: 100%;
+   
+    display: block;
+}
+
+h3{
+    font-family: "Fraunces";
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    width: 75%;
+}
+
+.grid-container-2{
+    margin-top: 2.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container-2 p{
+    color: hsl(232, 10%, 55%);
+    width: 75%;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.9rem;
+}
+
+.grid-container-2 a{
+    color: black;
+    text-decoration: underline;
+ text-decoration-color: hsl(51, 100%, 49%, 0.4);
+ text-decoration-thickness: 6px;
+ display: flex; /* Use flexbox for layout */
+ justify-content: center; /* Center content horizontally */
+ align-items: center; /* Center content vertically */
+ width: 100%; /* Full width of the container */
+padding: 1rem;
+font-family: "Fraunces";
+font-weight: 900;
+cursor: pointer;
+}
+
+#anchor-audience{
+    text-decoration-color: hsl(7, 99%, 70%,0.4);
+}
+
+
+.grid-container-other {
+    position: relative; /* Establish a positioning context for child elements */
+    width: 100%; /* Set container width */
+    height: auto; /* Adjust height as needed */
+}
+
+.grid-container-other img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline gaps below the image */
+}
+
+.grid-container-other h4 {
+    position: absolute; /* Position relative to the container */
+    top: 65%; /* Move 50% down from the top */
+    left: 50%; /* Move 50% in from the left */
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    color: hsl(167, 40%, 24%); /* Make the text stand out */
+    font-size: 1.5rem; /* Adjust font size */
+    text-align: center; /* Center-align the text */
+    padding: 0.5rem; /* Optional: Add padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners to the background */
+    font-family: "Fraunces";
+font-weight: 900;
+font-size: 2.3rem;
+width: 100%;
+}
+
+
+.grid-container-other p {
+    position: absolute; /* Position relative to the container */
+    top: 80%; /* Move 50% down from the top */
+    left: 50%; /* Move 50% in from the left */
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    color: hsl(167, 40%, 24%); /* Make the text stand out */
+    font-size: 1.5rem; /* Adjust font size */
+    text-align: center; /* Center-align the text */
+    padding: 0.5rem; /* Optional: Add padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners to the background */
+    font-family: "Barlow";
+font-weight: 600;
+font-size: 1.3rem;
+width: 75%;
+line-height: 1.9rem;
+}
+
+.photo-text{
+    color:hsl(198, 62%, 26%);
+}
+
+
+/* CLIENT TESTIMONIALS */
+.client-test{
+  
+    text-align: center;
+}
+
+.client-test h4{
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.circle-img{
+    border-radius: 50%;
+}
+
+.client-grid-container{
+    margin-bottom: 2rem;
+}
+
+.client-grid-container img,.client-grid-container p, 
+ .client-grid-container h4 {
+margin-bottom: 1.5rem;
+}
+
+.client-grid-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-testimonials-header{
+    font-size: 1.6rem;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 0.25rem;
+    font-family: "Fraunces";
+    text-transform: uppercase;
+}
+
+
+.client-grid-container p{
+width: 75%;
+font-size: 1.3rem;
+color: hsl(213, 9%, 39%);
+}
+
+.client-grid-container h2{
+    font-family: "Fraunces";
+}
+
+.client-grid-container h4{
+    color: hsl(210, 4%, 67%);
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.client-grid-container h2{
+    margin: 0;
+}
+/* CLIENT TESTIMONIALS *//* CLIENT TESTIMONIALS *//* CLIENT TESTIMONIALS *//* CLIENT TESTIMONIALS *//* CLIENT TESTIMONIALS */
+
+/* grid-2x2array */
+
+.grid-2x2array{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define 2 columns of equal width */
+    grid-template-rows: auto; /* Allow rows to adjust height based on content */
+    width: 100%; /* Full width of the parent container */
+} 
+
+.grid-2x2{
+    
+    display: flex; /* Optional: Use Flexbox for content alignment inside grid items */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center-align text */
+}
+
+.two-two-grid-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* grid-2x2array *//* grid-2x2array *//* grid-2x2array *//* grid-2x2array */
+
+
+/* FOOTER section */
+
+.footer {
+    background-color: hsl(167, 40%, 50%); /* Slightly muted teal for a cleaner look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem; /* Add padding for spacing */
+}
+
+.sunnyside-footer {
+    margin-top: 2rem;
+    color: hsl(0, 0%, 100%); /* White text for better contrast */
+    font-size: 2rem; /* Adjust font size for emphasis */
+    font-family: "Fraunces", serif; /* Add a premium font for branding */
+}
+
+.ul {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    gap: 1.5rem; /* Add spacing between links */
+}
+
+ul {
+    list-style: none;
+}
+
+.ul a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%); /* White links for a clean look */
+    font-size: 1.2rem; /* Adjust font size for readability */
+    font-family: "Barlow", sans-serif; /* Match other text styles */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.ul a:hover {
+    color: hsl(51, 100%, 49%); /* Bright yellow accent on hover */
+}
+
+
+/* SOCIAL ICONS FOOTER */
+
+.social-icons{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.social-icons img {
+    transition: filter 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.social-icons img:hover {
+    filter: brightness(1.8); /* Lightens the icon for a "white hover" effect */
+}
+
+/* FOOTER SECTION */
