@@ -345,3 +345,111 @@ ul {
 }
 
 /* FOOTER SECTION */
+
+
+/* Desktop / Tablet Media Queries */
+
+@media (min-width: 980px){
+
+    /* Top Section */
+
+    .navigation-top-section {
+        background-image: url('/mobile/image-header.jpg'); /* Image as background */
+        background-size: cover; /* Adjust background size */
+        background-repeat: no-repeat;
+        background-position: bottom; /* Center the image */
+        position: relative; /* Establish a positioning context */
+        width: 100%; /* Adjust width as needed */
+        min-height: 60rem; /* Set height for the section */
+        display: flex; /* Align content within */
+        align-items: flex-start; /* Center content vertically */
+        justify-content: center; /* Center content horizontally */
+        overflow: hidden; /* Prevent content overflow */
+    }
+
+    .grids{
+        display: grid;
+            grid-template-columns: 1fr 3fr; /* 2 columns: 1fr for the first column, 3fr for the second */
+            grid-template-rows: auto; /* Adjust rows as needed */
+            gap: 0;
+            padding: 0;
+            margin: 0;
+            
+    }
+    
+    .egg-img{
+        width: 50vw;
+        display: block;
+    }
+
+    .grid-container-2{
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-container-other p{
+        font-size: 1rem;
+    }
+
+    
+.grid-container-other h4 {
+    position: absolute; /* Position relative to the container */
+    top: 60%; /* Move 50% down from the top */
+    left: 50%; /* Move 50% in from the left */
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    color: hsl(167, 40%, 24%); /* Make the text stand out */
+    font-size: 1.5rem; /* Adjust font size */
+    text-align: center; /* Center-align the text */
+    padding: 0.5rem; /* Optional: Add padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners to the background */
+    font-family: "Fraunces";
+font-weight: 900;
+font-size: 2.3rem;
+width: 100%;
+}
+
+/* Client Section */
+
+    .client-test{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .client-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust column widths */
+        grid-auto-rows: auto; /* Ensures items adjust height as needed */
+        gap: 10px; /* Optional: spacing between items */
+        width: 80%;
+    }
+    
+
+    .circle-img{
+        width: 30%;
+    }
+
+    .client-grid-container p{
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    .client-grid-container h2{
+       font-size: 1.2rem;
+    }
+
+    .client-grid-container h4{
+        font-size: 1.1rem;
+    }
+    
+    /* Last Grid */
+
+    .grid-2x2array{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust column widths */
+        grid-auto-rows: auto; /* Ensures items adjust height as needed */
+    }
+    
+}
