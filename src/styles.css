@@ -349,9 +349,75 @@ ul {
 
 /* Desktop / Tablet Media Queries */
 
+nav {
+    background-color: #333; /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Styling for the hamburger button */
+@media (max-width: 979px){
+.hamburger {
+    display: block; /* Hidden by default */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+    position: fixed; /* Fix the position relative to the viewport */
+    top: 3.4rem; /* Distance from the top of the screen */
+    right: 2rem; /* Distance from the right of the screen */
+}
+
+#nav-list {
+    display: none; /* Hidden by default */
+  list-style-type: none;  /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  z-index: 20;
+  }
+  
+  #nav-list.active {
+    display: block; /* Show menu when active */
+  }
+
+
+  #nav-list li {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+  }
+  
+  #nav-list button.contact-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+  }
+
+}
+
+
 @media (min-width: 980px){
 
     /* Top Section */
+
+    .hamburger {
+        display: none; /* Hidden by default */
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        z-index: 20;
+    }
 
     .navigation-top-section {
         background-image: url('/mobile/image-header.jpg'); /* Image as background */

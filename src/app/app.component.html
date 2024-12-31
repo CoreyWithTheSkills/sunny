@@ -13,14 +13,21 @@
    <div class="top-text-container">
 
     <nav>
-        <h2 class="h2-text">sunnyside</h2>
-        <ul>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li><button class="contact-btn">CONTACT</button></li>
-        </ul>
+      <h2 class="h2-text">sunnyside</h2>
+      <!-- Hamburger button (hidden on larger screens) -->
+      <button class="hamburger" id="hamburger" (click)="toggleMenu()">&#9776;</button>
+    
+      <!-- Navigation list, show it based on the value of 'isMenuOpen' -->
+      <ul [ngClass]="{'active': isMenuOpen}" id="nav-list">
+        <li (click)="closeMenu()">About</li>
+        <li (click)="closeMenu()">Services</li>
+        <li (click)="closeMenu()">Projects</li>
+        <li (click)="closeMenu()"><button class="contact-btn">CONTACT</button></li>
+      </ul>
     </nav>
+    
+    
+    
 
 
     <h1>WE ARE CREATIVES</h1>
