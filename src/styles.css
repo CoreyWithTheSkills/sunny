@@ -479,6 +479,17 @@ nav {
             
     }
 
+    #other-img{
+        height: 100%;
+    }
+
+
+    .egg-img{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+
     /* Nav Bar */
     nav {
         background-color: transparent; /* Set the background color to blue */
@@ -496,7 +507,7 @@ nav {
     }
     
     .h2-text{
-        transform: translateY(-2rem);
+       
         font-size: 2rem; /* Set a font size for the title */
     }
     
