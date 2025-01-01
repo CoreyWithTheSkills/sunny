@@ -361,6 +361,13 @@ nav {
 
 /* Styling for the hamburger button */
 @media (max-width: 979px){
+
+    .hidden {
+        display: none;
+      }
+
+      
+
 .hamburger {
     display: block; /* Hidden by default */
     font-size: 2rem;
@@ -386,7 +393,7 @@ nav {
   top: 10rem;  /* Position it below the "sunnyside" text */
   left: 50%;  /* Center the nav list horizontally */
   transform: translateX(-50%);  /* Adjust the position to truly center */
-  width: 80%;  /* Set the width of the menu */
+  width: 25rem;  /* Set the width of the menu */
   height: 20.625rem;
   }
   

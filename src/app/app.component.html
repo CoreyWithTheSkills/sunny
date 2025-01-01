@@ -30,8 +30,8 @@
     
 
 
-    <h1>WE ARE CREATIVES</h1>
-    <img src="icon-arrow-down.svg" alt="" class="down-icon">
+    <h1 [ngClass]="{'hidden': isMenuOpen}">WE ARE CREATIVES</h1>
+    <img [ngClass]="{'hidden': isMenuOpen}" src="icon-arrow-down.svg" alt="" class="down-icon">
    </div>
    <picture>
     <source srcset="image-header-desktop.jpg" media="(min-width: 810px)">
